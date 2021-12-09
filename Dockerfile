@@ -1,4 +1,8 @@
 FROM python:3.10
-RUN pip install cpu-load-generator
+RUN mkdir /app
+WORKDIR /app
+ADD . /app/
+RUN pip install -r requirements.txt
 
-CMD python -m cpu_load_generator -l 0.5 -d 20 -c -1
+EXPOSE 5000
+CMD ["python", "/app/main.py"]
