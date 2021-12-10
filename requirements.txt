@@ -1,2 +1,4 @@
 Flask
 cpu-load-generator
+psycopg2-binary
+python-dotenv

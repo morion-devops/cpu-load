@@ -1,0 +1,21 @@
+<!doctype html>
+
+<head>
+  <title>cpu-load application</title>
+  <meta charset=utf-8>
+</head>
+
+<body>
+  <H2>You need to wait (<i>less than 1 minute</i>)</H2>
+  CPU load was generated in last 1 minute.<br />
+  For this demonstraion I use not so powerfull servers.
+  So this is some kind of (stupid) protection, to do impossible to load the server too much.<br /><br />
+
+  So, you can:
+  <ul>
+    <li>If you want to see Grafana graphics, to to (<i>link will be added later</i>)<br /></li>
+    <li>If you want to generate new load, you need to wait until {{ wait_until }} (MSK) <br /><br /></li>
+  </ul>
+  {% include 'back_button.html' %}
+
+</body>
